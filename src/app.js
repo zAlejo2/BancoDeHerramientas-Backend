@@ -81,3 +81,6 @@ app.set('port', process.env.PORT || 7000);
 
 export default app;
 
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en el puerto ${PORT}`);
+});
