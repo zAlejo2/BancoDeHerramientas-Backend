@@ -9,13 +9,14 @@ const config = {
         secret: process.env.JWT_SECRET,
         secretnewcontrasena: process.env.JWT_SECRET_RESTABLECER_CONTRASENA
     },
-    mysql: {
-        host: process.env.MYSQL_HOST || 'switchyard.proxy.rlwy.net', // <- Usa el externo
-        user: process.env.MYSQL_USER || 'root',
-        password: process.env.MYSQL_PASSWORD,
-        database: process.env.MYSQL_DATABASE,
-        port: Number(process.env.MYSQL_PORT) || 3306
-    },
+  mysql: {
+  host: process.env.MYSQL_HOST, // Solo usa el definido en .env
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
+  port: Number(process.env.MYSQL_PORT) || 3306
+},
+
     email: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
