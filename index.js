@@ -1,6 +1,9 @@
+
 import 'dotenv/config';
 import app from './src/app.js';
 
-app.listen(app.get('port'), () => {
-    console.log('Servidor escuchanado en el puerto', app.get('port'));
+const PORT = process.env.PORT || 10000;
+
+app.listen(PORT, () => {
+  console.log('Servidor escuchando en el puerto', PORT);
 });
