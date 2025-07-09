@@ -25,10 +25,11 @@ import olvidarContrasena from './routes/auth/olvidarContraseñaRouter.js';
 import importarExcel from './routes/excelRouter.js';
 
 const app = express();
+const PORT = process.env.PORT || 10000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://banco-de-herramientas-rho.vercel.app',
+  origin: 'https://banco-de-herramientas-frontend.vercel.app',
   credentials: true
 }));
 
